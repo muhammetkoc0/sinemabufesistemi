@@ -30,30 +30,30 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            label1 = new Label();
             groupBox3 = new GroupBox();
+            button2 = new Button();
+            button1 = new Button();
+            kasalab = new Label();
+            tutarlab = new Label();
+            label14 = new Label();
+            label13 = new Label();
             groupBox2 = new GroupBox();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            tutarlab = new Label();
-            kasalab = new Label();
-            button1 = new Button();
-            button2 = new Button();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             label15 = new Label();
@@ -80,42 +80,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Ürün Miktarı";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(15, 76);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 28);
-            label1.TabIndex = 2;
-            label1.Text = "Mısır";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(15, 116);
-            label2.Name = "label2";
-            label2.Size = new Size(48, 28);
-            label2.TabIndex = 3;
-            label2.Text = "Çay";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(17, 158);
-            label3.Name = "label3";
-            label3.Size = new Size(37, 28);
-            label3.TabIndex = 4;
-            label3.Text = "Su";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(17, 199);
-            label4.Name = "label4";
-            label4.Size = new Size(55, 28);
-            label4.TabIndex = 5;
-            label4.Text = "Bilet";
             // 
             // textBox1
             // 
@@ -145,6 +109,42 @@
             textBox4.Size = new Size(125, 36);
             textBox4.TabIndex = 8;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(17, 199);
+            label4.Name = "label4";
+            label4.Size = new Size(55, 28);
+            label4.TabIndex = 5;
+            label4.Text = "Bilet";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(17, 158);
+            label3.Name = "label3";
+            label3.Size = new Size(37, 28);
+            label3.TabIndex = 4;
+            label3.Text = "Su";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(15, 116);
+            label2.Name = "label2";
+            label2.Size = new Size(48, 28);
+            label2.TabIndex = 3;
+            label2.Text = "Çay";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(15, 76);
+            label1.Name = "label1";
+            label1.Size = new Size(58, 28);
+            label1.TabIndex = 2;
+            label1.Text = "Mısır";
+            // 
             // groupBox3
             // 
             groupBox3.BackColor = Color.White;
@@ -160,6 +160,64 @@
             groupBox3.TabIndex = 1;
             groupBox3.TabStop = false;
             groupBox3.Text = "Kasa";
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Red;
+            button2.Location = new Point(56, 179);
+            button2.Name = "button2";
+            button2.Size = new Size(179, 35);
+            button2.TabIndex = 9;
+            button2.Text = "Temizle";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(128, 255, 128);
+            button1.Location = new Point(56, 73);
+            button1.Name = "button1";
+            button1.Size = new Size(179, 35);
+            button1.TabIndex = 7;
+            button1.Text = "Hesapla";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // kasalab
+            // 
+            kasalab.AutoSize = true;
+            kasalab.Location = new Point(162, 254);
+            kasalab.Name = "kasalab";
+            kasalab.Size = new Size(24, 28);
+            kasalab.TabIndex = 6;
+            kasalab.Text = "0";
+            // 
+            // tutarlab
+            // 
+            tutarlab.AutoSize = true;
+            tutarlab.Location = new Point(211, 136);
+            tutarlab.Name = "tutarlab";
+            tutarlab.Size = new Size(24, 28);
+            tutarlab.TabIndex = 4;
+            tutarlab.Text = "0";
+            tutarlab.Click += label15_Click;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(96, 254);
+            label14.Name = "label14";
+            label14.Size = new Size(69, 28);
+            label14.TabIndex = 3;
+            label14.Text = "Kasa=";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(56, 136);
+            label13.Name = "label13";
+            label13.Size = new Size(149, 28);
+            label13.TabIndex = 1;
+            label13.Text = "Toplam Tutar=";
             // 
             // groupBox2
             // 
@@ -179,6 +237,42 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Fiyat Listesi";
             groupBox2.Enter += groupBox2_Enter;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(105, 199);
+            label12.Name = "label12";
+            label12.Size = new Size(61, 28);
+            label12.TabIndex = 12;
+            label12.Text = "35 TL";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(107, 158);
+            label11.Name = "label11";
+            label11.Size = new Size(51, 28);
+            label11.TabIndex = 10;
+            label11.Text = "5 TL";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(104, 116);
+            label10.Name = "label10";
+            label10.Size = new Size(62, 28);
+            label10.TabIndex = 8;
+            label10.Text = "10 TL";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(104, 76);
+            label9.Name = "label9";
+            label9.Size = new Size(63, 28);
+            label9.TabIndex = 6;
+            label9.Text = "22 TL";
             // 
             // label5
             // 
@@ -215,99 +309,6 @@
             label8.Size = new Size(70, 28);
             label8.TabIndex = 2;
             label8.Text = "Mısır=";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(104, 76);
-            label9.Name = "label9";
-            label9.Size = new Size(63, 28);
-            label9.TabIndex = 6;
-            label9.Text = "22 TL";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(104, 116);
-            label10.Name = "label10";
-            label10.Size = new Size(62, 28);
-            label10.TabIndex = 8;
-            label10.Text = "10 TL";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(107, 158);
-            label11.Name = "label11";
-            label11.Size = new Size(51, 28);
-            label11.TabIndex = 10;
-            label11.Text = "5 TL";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(105, 199);
-            label12.Name = "label12";
-            label12.Size = new Size(61, 28);
-            label12.TabIndex = 12;
-            label12.Text = "35 TL";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(56, 136);
-            label13.Name = "label13";
-            label13.Size = new Size(149, 28);
-            label13.TabIndex = 1;
-            label13.Text = "Toplam Tutar=";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(96, 254);
-            label14.Name = "label14";
-            label14.Size = new Size(69, 28);
-            label14.TabIndex = 3;
-            label14.Text = "Kasa=";
-            // 
-            // tutarlab
-            // 
-            tutarlab.AutoSize = true;
-            tutarlab.Location = new Point(211, 136);
-            tutarlab.Name = "tutarlab";
-            tutarlab.Size = new Size(24, 28);
-            tutarlab.TabIndex = 4;
-            tutarlab.Text = "0";
-            tutarlab.Click += label15_Click;
-            // 
-            // kasalab
-            // 
-            kasalab.AutoSize = true;
-            kasalab.Location = new Point(162, 254);
-            kasalab.Name = "kasalab";
-            kasalab.Size = new Size(24, 28);
-            kasalab.TabIndex = 6;
-            kasalab.Text = "0";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(128, 255, 128);
-            button1.Location = new Point(56, 73);
-            button1.Name = "button1";
-            button1.Size = new Size(179, 35);
-            button1.TabIndex = 7;
-            button1.Text = "Hesapla";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Red;
-            button2.Location = new Point(56, 179);
-            button2.Name = "button2";
-            button2.Size = new Size(179, 35);
-            button2.TabIndex = 9;
-            button2.Text = "Temizle";
-            button2.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -352,7 +353,7 @@
             Controls.Add(groupBox3);
             Controls.Add(groupBox1);
             Font = new Font("Corbel", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "Form1";
             Text = "Form1";
             groupBox1.ResumeLayout(false);
