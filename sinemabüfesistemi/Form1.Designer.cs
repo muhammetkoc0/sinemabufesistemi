@@ -39,6 +39,7 @@
             label2 = new Label();
             label1 = new Label();
             groupBox3 = new GroupBox();
+            button3 = new Button();
             button2 = new Button();
             button1 = new Button();
             kasalab = new Label();
@@ -57,6 +58,7 @@
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
             label15 = new Label();
+            label16 = new Label();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -148,6 +150,7 @@
             // groupBox3
             // 
             groupBox3.BackColor = Color.White;
+            groupBox3.Controls.Add(button3);
             groupBox3.Controls.Add(button2);
             groupBox3.Controls.Add(button1);
             groupBox3.Controls.Add(kasalab);
@@ -161,10 +164,21 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Kasa";
             // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(128, 255, 128);
+            button3.Location = new Point(56, 35);
+            button3.Name = "button3";
+            button3.Size = new Size(179, 34);
+            button3.TabIndex = 10;
+            button3.Text = "İndirim Uygula";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
             // button2
             // 
             button2.BackColor = Color.Red;
-            button2.Location = new Point(56, 179);
+            button2.Location = new Point(56, 192);
             button2.Name = "button2";
             button2.Size = new Size(179, 35);
             button2.TabIndex = 9;
@@ -174,8 +188,8 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(128, 255, 128);
-            button1.Location = new Point(56, 73);
+            button1.BackColor = Color.FromArgb(128, 255, 255);
+            button1.Location = new Point(56, 98);
             button1.Name = "button1";
             button1.Size = new Size(179, 35);
             button1.TabIndex = 7;
@@ -195,7 +209,7 @@
             // tutarlab
             // 
             tutarlab.AutoSize = true;
-            tutarlab.Location = new Point(211, 136);
+            tutarlab.Location = new Point(211, 150);
             tutarlab.Name = "tutarlab";
             tutarlab.Size = new Size(24, 28);
             tutarlab.TabIndex = 4;
@@ -214,7 +228,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(56, 136);
+            label13.Location = new Point(56, 150);
             label13.Name = "label13";
             label13.Size = new Size(149, 28);
             label13.TabIndex = 1;
@@ -244,9 +258,9 @@
             label12.AutoSize = true;
             label12.Location = new Point(105, 199);
             label12.Name = "label12";
-            label12.Size = new Size(61, 28);
+            label12.Size = new Size(60, 28);
             label12.TabIndex = 12;
-            label12.Text = "35 TL";
+            label12.Text = "75 TL";
             // 
             // label11
             // 
@@ -271,9 +285,9 @@
             label9.AutoSize = true;
             label9.Location = new Point(104, 76);
             label9.Name = "label9";
-            label9.Size = new Size(63, 28);
+            label9.Size = new Size(62, 28);
             label9.TabIndex = 6;
-            label9.Text = "22 TL";
+            label9.Text = "25 TL";
             // 
             // label5
             // 
@@ -341,12 +355,25 @@
             label15.TabIndex = 5;
             label15.Text = "KOÇ CİNEMA SATIŞ PANELİ";
             // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.FromArgb(255, 255, 128);
+            label16.Font = new Font("Courier New", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label16.ForeColor = SystemColors.ControlText;
+            label16.Location = new Point(72, 152);
+            label16.Name = "label16";
+            label16.Size = new Size(376, 27);
+            label16.TabIndex = 6;
+            label16.Text = "ÖĞRENCİLERE %25 İNDİRİM!!!";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(12F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(1200, 630);
+            Controls.Add(label16);
             Controls.Add(label15);
             Controls.Add(panel1);
             Controls.Add(pictureBox1);
@@ -398,5 +425,7 @@
         private PictureBox pictureBox1;
         private Panel panel1;
         private Label label15;
+        private Button button3;
+        private Label label16;
     }
 }
